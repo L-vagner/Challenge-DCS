@@ -26,7 +26,7 @@ class DCSChartController extends Controller
         $table = [];
         foreach ($query as $item)
         {
-            $table[$item->NomClient][$item->mois] = $item->total_en_euros;
+            $table[$item->ClientID][$item->mois] = $item->total_en_euros;
         }
 
         return view('topCinq', ['val' => $table]);

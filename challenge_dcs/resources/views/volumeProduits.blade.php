@@ -1,35 +1,41 @@
-<div>
-    <canvas id="myChart"></canvas>
-</div>
-<pre>
-    {{$val}}
-</pre>
+@extends('layout/master')
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+@section('title')
+    <title>Evolution des volumes</title>
+@endsection
 
-<script>
-    const ctx = document.getElementById('myChart');
+@section('content')
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
 
-    new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-            datasets: [{
-                label: '{{$val[0]}}',
-                data: [12, 19, 3, 5, 2, 3],
-                borderWidth: 1
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        let data = JSON.parse(' {!! json_encode($val) !!}  ');
+        console.log(data);
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: '',
+                datasets: [
+                    @foreach ($val as $key => $_)
+                                                {
+                        label: '{{ $key }}',
+                        data: data.{{ $key }}
+                                },
+                    @endforeach
+                            ]
             },
-            {
-                label: '{{$val[1]}}',
-                data: [1,2,3,4]
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
                 }
             }
-        }
-    });
-</script>
+        });
+    </script>
+@endsection

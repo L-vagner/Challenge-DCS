@@ -1,11 +1,12 @@
 <?php
 
-use App\Http\Controllers\LgnCommandeController;
+use App\Http\Controllers\DCSChartController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function(){return view('welcome');});
 
-Route::get('/topCinq', [LgnCommandeController::class, 'evol_top_cinq_client']);
-Route::get('/voluProduit', [LgnCommandeController::class, 'evol_vol_produit']);
+Route::get('/topDix', [DCSChartController::class, 'topDix'] );
+
+Route::get('/topCinq', [DCSChartController::class, 'topCinq']);
+
+Route::get('/volumeProduit', [DCSChartController::class, 'volumeProduit']);

@@ -121,13 +121,6 @@
       <excludeFolder url="file://$MODULE_DIR$/challenge_dcs/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/challenge_dcs/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/challenge_dcs/vendor/webmozart/assert" />
-      <excludeFolder url="file://$MODULE_DIR$/challenge_dcs/vendor/symfony/config" />
-      <excludeFolder url="file://$MODULE_DIR$/challenge_dcs/vendor/symfony/dependency-injection" />
-      <excludeFolder url="file://$MODULE_DIR$/challenge_dcs/vendor/symfony/filesystem" />
-      <excludeFolder url="file://$MODULE_DIR$/challenge_dcs/vendor/symfony/stimulus-bundle" />
-      <excludeFolder url="file://$MODULE_DIR$/challenge_dcs/vendor/symfony/ux-chartjs" />
-      <excludeFolder url="file://$MODULE_DIR$/challenge_dcs/vendor/symfony/var-exporter" />
-      <excludeFolder url="file://$MODULE_DIR$/challenge_dcs/vendor/twig/twig" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

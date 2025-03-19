@@ -128,13 +128,6 @@
       <path value="$PROJECT_DIR$/challenge_dcs/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/challenge_dcs/vendor/symfony/yaml" />
       <path value="$PROJECT_DIR$/challenge_dcs/vendor/theseer/tokenizer" />
-      <path value="$PROJECT_DIR$/challenge_dcs/vendor/symfony/dependency-injection" />
-      <path value="$PROJECT_DIR$/challenge_dcs/vendor/twig/twig" />
-      <path value="$PROJECT_DIR$/challenge_dcs/vendor/symfony/stimulus-bundle" />
-      <path value="$PROJECT_DIR$/challenge_dcs/vendor/symfony/filesystem" />
-      <path value="$PROJECT_DIR$/challenge_dcs/vendor/symfony/ux-chartjs" />
-      <path value="$PROJECT_DIR$/challenge_dcs/vendor/symfony/config" />
-      <path value="$PROJECT_DIR$/challenge_dcs/vendor/symfony/var-exporter" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2">

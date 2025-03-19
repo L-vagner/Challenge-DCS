@@ -10,16 +10,26 @@ class DCSChartController extends Controller
     {
         $LgnCommandeService = new LgnCommandeService();
         $query = $LgnCommandeService->top_dix_appli();
+        $table = [];
+        foreach ($query as $item)
+        {
+            $table[$item->nom_application] = $item->total_en_euros;
+        }
 
-        return view('topDix', ['val' => $query]);
+        return view('topDix', ['val' => $table]);
     }
 
     public function topCinq()
     {
         $LgnCommandeService = new LgnCommandeService();
         $query = $LgnCommandeService->evol_top_cinq_client();
+        $table = [];
+        foreach ($query as $item)
+        {
+            $table[$item->NomClient][$item->mois] = $item->total_en_euros;
+        }
 
-        return view('topCinq', ['val' => $query]);
+        return view('topCinq', ['val' => $table]);
     }
 
     public function volumeProduit(){

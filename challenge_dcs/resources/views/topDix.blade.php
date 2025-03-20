@@ -1,11 +1,13 @@
 @extends('layout/master')
+
 @section('title')
     <title>Top Dix</title>
 @endsection
 
 @section('content')
+<h2 style="text-align: center;">top 10 des applications par grand client</h2>
 <div>
-    <canvas id="myChart"></canvas>
+    <canvas id="myChart" style="max-height: 75vh;"></canvas>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -43,3 +45,4 @@
         }
     });
 </script>
+@endsection

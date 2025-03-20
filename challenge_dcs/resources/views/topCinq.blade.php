@@ -3,11 +3,12 @@
 @section('title')
 <title>Top Cinq</title>
 @endsection
+
 @section('content')
 
-
+<h2 style="text-align: center;">Evolution des montants pour les 5 plus grand clients</h2>
 <div>
-    <canvas id="myChart"></canvas>
+    <canvas id="myChart" style="max-height: 75vh;"></canvas>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

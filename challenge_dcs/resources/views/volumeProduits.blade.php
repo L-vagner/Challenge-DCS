@@ -5,9 +5,10 @@
 @endsection
 
 @section('content')
-    <div>
-        <canvas id="myChart"></canvas>
-    </div>
+<h2 style="text-align: center;">Evolution des volumes des produits 1_1 et 1_4</h2>
+<div>
+    <canvas id="myChart" style="max-height: 75vh;"></canvas>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
